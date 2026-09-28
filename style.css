@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./imagens/dark-minimalist-mountains-4vhxwmyb2cwt6dm8.jpg);
+}
+
+body {
+  min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da tela */
+  background-image: url(./imagens/dark-minimalist-mountains-4vhxwmyb2cwt6dm8.jpg);
+  background-repeat: no-repeat;
+  background-position: center; /* Centraliza a imagem na tela */
+  background-size: cover; /* Estica a imagem para cobrir todo o espaço */
+  background-attachment: fixed; /* Opcional: mantém o fundo fixo ao rolar */
+  overflow: hidden;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+.profile {
+  text-align: center;
+  padding: 10px;
+}
+
+.profile img {
+  width: 112px;
+  /*elementos inline nao podemos alinhar ao centro com o margin: auto; no caso a img é um elemento inline, entao nao podemos usar margin*/
+  /*precisa definir o display que seja block*/
+}
+
+.profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 2px auto 15px;
+  /*Um valor: Aplica a mesma margem aos quatro lados simultaneamente. 
+    Dois valores: O primeiro define as margens superior e inferior; o segundo define as margens esquerda e direita. 
+    Três valores: O primeiro é para o topo; o segundo para as laterais (esquerda e direita); o terceiro para o inferior. 
+    Quatro valores: Aplicam-se na ordem horária: superior, direita, inferior e esquerda. */
+}
+
+/* links */
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul li a {
+  border: solid 1px gray;
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+  border-radius: 50px;
+  text-decoration: none;
+  background: rgba(131, 129, 131, 0.1);
+  transition: all 0.3s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border: solid 1px var(--text-color);
+}
+
+.icones {
+  text-align: center;
+  padding: 20px;
+  display: block;
+  font-size: 19px;
+}
+
+.github {
+  padding: 7px;
+}
+
+.github:hover {
+  background: gray;
+  border-radius: 100%;
+  padding: 7px;
+  transition: background 0.2s;
+}
+
+.whatsapp {
+  padding: 7px;
+}
+
+.whatsapp:hover {
+  background: gray;
+  border-radius: 100%;
+  padding: 7px;
+  transition: background 0.2s;
+}
+
+.instagram {
+  padding: 7px;
+}
+
+.instagram:hover {
+  background: gray;
+  border-radius: 100%;
+  padding: 7px;
+  transition: background 0.2s;
+}
+
+.portifolio {
+  padding: 7px;
+}
+
+.portifolio:hover {
+  background: gray;
+  border-radius: 100%;
+  padding: 7px;
+  transition: background 0.2s;
+}
